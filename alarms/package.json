@@ -6,22 +6,22 @@
   "version": "0.3.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebookincubator/fbc-js-core.git",
-    "directory": "fbcnms-packages/fbcnms-alarms"
+    "url": "https://github.com/talesmota/fbcnms",
+    "directory": "alarms"
   },
   "main": "lib/index.js",
   "scripts": {
     "build": "babel ./ -d lib/",
     "prepublish": "yarn run build",
-    "dev":"chokidar \"components/**/*.js\" \"hooks/**/*.js\" \"util/**/*.js\" -c \"yarn run yalc-push\"",
-    "yalc-push":"yalc push"
+    "dev": "chokidar \"components/**/*.js\" \"hooks/**/*.js\" \"util/**/*.js\" -c \"yarn run yalc-push\"",
+    "yalc-push": "yalc push"
   },
   "dependencies": {
     "@material-ui/core": "^4.0.0",
     "@material-ui/icons": "^4.0.0",
     "@material-ui/lab": "^4.0.0-alpha.30",
     "@material-ui/styles": "^4.0.0",
-    "@fbcnms/ui":"0.2.0",
+    "@fbcnms/ui": "0.2.0",
     "axios": "^0.21.1",
     "classnames": "^2.2.5",
     "copy-to-clipboard": "^3.0.8",
